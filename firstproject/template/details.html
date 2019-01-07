@@ -1,0 +1,65 @@
+<html>
+   <head>
+      <style>
+        table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 2px solid black;
+}
+
+td,th {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+table {
+  width: 50%;
+}
+
+th {
+  height: 50px;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: Black;
+  color: white;
+}
+
+      </style>
+   </head>
+
+   <body>
+      
+     
+      <center>
+      	<h1>Login details of user</h1>
+      <table>
+         <tr>
+            <th>Username</th>
+            <th>Password</th>
+         </tr>
+          {% for x in record %}
+         <tr>
+            <td>{{x.user}}</td>
+            <td>{{x.password}}</td>
+         </tr>
+         {% endfor %}
+      </table>
+      </center>
+      
+   </body>
+</html>

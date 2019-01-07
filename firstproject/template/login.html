@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+
+	<style type="text/css">
+		
+		.a{
+			width:50%;
+			height:auto;
+			background-color:black;
+			margin:auto;
+		}
+
+		.a input{
+			width: 80%;font-size: 15pt;margin-left: 10%;margin-bottom: 10px;padding-left: 10px;
+		}
+
+		.a h1{
+			text-align: center; color: azure;text-transform: uppercase;
+		}
+
+		        .a input[type='submit']{
+            width: 50%;margin-left: 25%
+        ;margin-bottom: 40px;background-color: #ccc;
+        }
+
+	</style>
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="a">
+	<center>
+			
+		<h1>Login here...</h1>
+		<form action="{% url 'data_entry' %}">
+			
+			<input type="text" name="xyz" placeholder="Enter Username"><br><br>
+			<input type="password" name="pass" placeholder="Enter Password"><br><br>
+			<input type="submit" name="Login">
+
+		</form>
+		
+	</center>
+</div>
+</div>
+</body>
+</html>

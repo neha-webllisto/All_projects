@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+{% block head %}
+    <title>Home Page</title>
+
+{% endblock %}
+	<style type="text/css">
+
+	*{
+		margin: 0px;padding: 0px;
+	}
+	nav{
+
+	}
+
+	nav ul{
+		text-align: center;
+		background-color: black;
+		height: 100px;
+	}
+
+	nav ul li{
+		font-size: 20pt;
+		color: white;
+		line-height: 100px;
+		width: 150px;
+
+		list-style: none;
+		display: inline-block;
+		/*text-transform: uppercase;*/
+	}
+
+	nav ul li:hover{
+		cursor: pointer;
+		background-color: green;
+		/*color: green;*/
+	}
+	</style>
+
+</head>
+
+<body>
+<nav>
+	<ul>
+		<a href="http://127.0.0.1:8000/Home/home/"><li>Home</li></a>
+        <a href="http://127.0.0.1:8000/Home/product/"><li>Products</li></a>
+		<a href="http://127.0.0.1:8000/Home/services"><li>Services</li></a>
+		<a href="http://127.0.0.1:8000/Home/login/"><li>Login</li></a>
+		<a href="http://127.0.0.1:8000/Home/contact"><li>Contact</li></a>
+	</ul>
+</nav>
+
+</body>
+{% block body %}
+{% endblock %}
+</html>

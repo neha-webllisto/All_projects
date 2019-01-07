@@ -1,0 +1,97 @@
+
+{% extends 'homepage.html' %}
+
+
+{% block head %}
+<title>Login</title>
+
+
+    <style type="text/css">
+        table{
+            width: 50%;
+            height: auto;
+            background-color: darkgray;
+            margin: auto;
+            text-align: center;
+        }
+
+        table tr td input{
+            width: 85%;
+            height: 30px;
+            padding-left: 10px;
+            margin:10px 0px;
+            border: 1px solid black;
+            font-size: 14pt;
+        }
+        table tr td select{
+            width: 87%;
+            font-size: 14pt;
+            height: 35px;
+            padding-left: 10px;
+            margin:10px 0px;
+            border: 1px solid black;
+        }
+        table tr:first-child{
+            font-size: 28pt;
+            color: white;
+            text-transform: uppercase;
+        }
+        table tr th input[type="submit"]{
+            width: 67%;height: 35px;
+            margin-bottom: 10px;
+            font-size: 14pt ;
+        }
+    </style>
+
+
+{% endblock %}
+
+
+
+{% block body %}
+
+
+
+    <table>
+        <tr>
+            <th>Register Here</th>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Username"></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Email Id"></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Phone Number."></td>
+        </tr>
+        <tr>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td><select>
+                <option>Select Your City</option>
+                <option>Indore</option>
+                <option>Bhopal</option>
+                <option>Damoh</option>
+                <option>Surat</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" placeholder="Enter Password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" placeholder="Confirm Password">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <input type="submit" value="SAVE">
+            </th>
+        </tr>
+
+    </table>
+{% endblock %}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'boot.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'boot.js' %}">
+</head>
+<body>
+	<center>
+		<h1>Enter your details...</h1><br><br>
+		<form>
+			{% csrf_token %}
+			{{form}}
+		</form>
+	</center>
+
+</body>
+</html>
